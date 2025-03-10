@@ -1,21 +1,47 @@
-.contact-info{
-  text-align: center;
-  padding: 25px;
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  min-height: calc(100% - 60px);
+  /* Allow space for contact-info */
+}
+
+.contact-info {
   background: #2B2D42;
   font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
-	font-size: 18px;
-	line-height: 1.5;
+  font-size: 30px;
+  line-height: 1.5;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
 }
 
-.contact-info a{
-  padding: 10px;
-  display: inline-block;
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-a{
+.contact-info p {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+  padding-top: 10px;
+  /* Adds space between the links and the copyright text */
+}
+
+a {
   color: red;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }

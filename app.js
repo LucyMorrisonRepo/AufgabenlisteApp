@@ -54,7 +54,7 @@ function getTasks(){
 //add task
 function addtask(e){
   if(taskInput.value === ''){
-    alert('Add a task');
+    alert('Aufgabe hinzufügen');
   }
     //create list element
     const li = document.createElement('li');
@@ -101,7 +101,7 @@ function storeTaskInLocalStorage(x){
 //remove task
 function removetask(e){
   if(e.target.parentElement.classList.contains('delete-item')){
-    if(confirm('are you sure?')){
+    if(confirm('Sind Sie sicher?')){
     e.target.parentElement.parentElement.remove();
 
     //remove from local storage
